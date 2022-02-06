@@ -14,8 +14,9 @@ So, considering the above lines in the mind, in the best/average case quicksort 
 which we can also write as O(n log n). <br><br>
 And in the worst case, which is when the array/list is already sorted and we are using 0 or n-1 index of the list as a pivot (where n is the size of the list),
 in that case, the time complexity will be O(n²),
-because again two operations will be happing the first will remain the same but the divide and conquer one won't be happing because the list is already sorted and at each level, we
-are just creating only one side of the partition, and it will happen for all the elements, so the second operation will also take O(n). Combining both the operation we get O(n²).
+because again two operations will be happing the first one will remain the same but the divide and conquer one won't be happing because the 
+list is already sorted and at each level, we are just creating only one side of the partition, and it will happen for all the elements, 
+so the second operation will also take O(n). Combining both the operation we get O(n²).
 <br>
 <br>
 There are two recommendations to avoid the worst case. <br>
