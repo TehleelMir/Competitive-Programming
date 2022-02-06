@@ -1,4 +1,4 @@
-**Simple Search** <br>
+**Simple Search🦌** <br>
 simple search is a search algorithm used to look for an element in an array or a list. <br><br>
 
 **Time Complexity** <br>
