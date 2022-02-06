@@ -12,7 +12,7 @@ In Selection sort, we do the following operations:<br>
 
 So, we have to perform step first for every element in the list, and the time complexity for that is O(n)<br>
 And then we have to compare that element with the other remaining elements in the list, and the time complexity for that is O(n - z), 
-where z is the number of elements we have already checked, but since we ignore constans in Big O notation, so instead of writing
+where z is the number of elements we have already checked, but since we ignore constants in Big O notation, so instead of writing
 O(n  - z) we will just write it as O(n)<br>
 
 So we have O(n * n) time complexity for the whole algorithm, which we can also write as O(n²).<br><br>
