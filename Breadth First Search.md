@@ -66,7 +66,9 @@ public class BreadthFirstSearch {
             visited.add(temp.nodeNumber);
 
             if(temp.nodeNumber == destination.nodeNumber) return true;
-            queue.addAll(temp.nodeNeighbors);
+            for(Node childNode : temp.nodeNeighbors)
+                if(!visited.contains(childNode))
+                    queue.add(childNode);
         }
         return false;
     }
