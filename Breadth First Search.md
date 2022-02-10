@@ -1,19 +1,53 @@
 **Breadth-First Search🛒**<br>
-Breadth-first search is a graph algorithm used to (find the shortest path between two nodes) (to check if there is a path between two nodes) and (also to 
-simply traverse the graphic).<br>
+Breadth-first search is a graph algorithm used to <br>
+- To check if there is a path between two vertices/nodes
+- To get the shortest path between two nodes
+- To do a traversal of a whole graph i.e. visiting each node in the given graph.
 
-In the below code im checking if there exists a path between two nodes. <br><br>
+<br>
 
-**Time Complixity**<br>
-///
-<br><br>
+**Time complixty**<br>
+The time complexity of the breadth-first search algorithm is O(v+e). Where v is the number of vertices/nodes and e is for the number of edges. <br><br>
 
-**Explanation*<br>
-////
-<br><br>
+**Explanation**<br>
+Let's take an example, suppose we want to see if there exists a path between two nodes in a graph, and in the worst case the node "b" can be at the end 
+of the graph, so we have to go through each node in the graph first, to reach that one. And the time complexity for that will O(n) where n is the number
+of vertices/node we have in a graph which we can also write as O(v). <br>
+While traversing through each node we have to check its "neighbor's or you can say its edges" as well. So example if a node "c" has 3 edges/neighbors
+attached to it, we have to perform 3 operations on node "c". And the time complexity for that will be again O(n) where n is the number of edges that a particular node 
+have, which we can also write as O(e). <br><br>
+Combining the both we get the total time complexity of O(V+E) <br>
+- (V: because we are going to visit every node in the worst case)
+- (E: Total number of edges a graph have because on each node we have to visit/check its edges as well.
+
+<br>
+<br>
+The below coding example is checking if there is a path between node (1) and node (2), in a directed graph. And if there is 
+it will print the path between those two nodes, and again that path will be the shorted path possible between these two nodes.
+<br>
+image
+<br>
+<br>
 
 **Code**<br>
 ```
+import java.util.ArrayList;
+
+class Node {
+    int nodeNumber;
+    Node parent;
+    ArrayList<Node> nodeNeighbors = new ArrayList<Node>();
+    public Node(int nodeNumber) {
+        this.nodeNumber = nodeNumber;
+    }
+
+    public void addNeighbors(Node node) {
+        nodeNeighbors.add(node);
+    }
+}
+
+
+
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.LinkedList;
@@ -50,27 +84,45 @@ public class BreadthFirstSearch {
         node5.addNeighbors(node2);
 
         if(breadthFirstSearch(node1, node2))
-            System.out.print("Yes there is a path between node "+node1.nodeNumber+ " and node "+node2.nodeNumber);
+            System.out.println("Yes there is a path between node "+node1.nodeNumber+ " and node "+node2.nodeNumber);
         else
-            System.out.print("No there is a path between node "+node1.nodeNumber+ " and node "+node2.nodeNumber);
+            System.out.println("No there is a path between node "+node1.nodeNumber+ " and node "+node2.nodeNumber);
     }
 
     public static boolean breadthFirstSearch(Node source, Node destination) {
         LinkedList<Node> queue = new LinkedList<>();
         HashSet<Integer> visited = new HashSet<>();
         queue.add(source);
+        source.parent = null;
 
         while(!queue.isEmpty()) {
             Node temp = queue.remove();
             if(visited.contains(temp.nodeNumber)) continue;
             visited.add(temp.nodeNumber);
 
-            if(temp.nodeNumber == destination.nodeNumber) return true;
+            if(temp.nodeNumber == destination.nodeNumber) {
+                printThePath(temp);
+                return true;
+            }
             for(Node childNode : temp.nodeNeighbors)
-                if(!visited.contains(childNode))
+                if(!visited.contains(childNode)) {
+                    childNode.parent = temp;
                     queue.add(childNode);
+                }
         }
         return false;
+    }
+
+    public static void printThePath(Node node) {
+        ArrayList<Node> path = new ArrayList<>();
+        while(node != null) {
+            path.add(node);
+            node = node.parent;
+        }
+
+        for(int i=path.size()-1 ; i>-1 ; i--)
+            if(i == 0)  System.out.println(path.get(i).nodeNumber);
+            else        System.out.print(path.get(i).nodeNumber + " -> ");
     }
 }
 ```
