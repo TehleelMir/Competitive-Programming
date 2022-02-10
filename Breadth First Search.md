@@ -108,7 +108,7 @@ public class BreadthFirstSearch {
                 return true;
             }
             for(Node childNode : temp.nodeNeighbors)
-                if(!visited.contains(childNode)) {
+                if(!visited.contains(childNode.nodeNumber)) {
                     childNode.parent = temp;
                     queue.add(childNode);
                 }
