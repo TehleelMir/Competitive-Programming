@@ -25,7 +25,10 @@ Combining the both we get the total time complexity of O(V+E) <br>
 The below coding example is checking if there is a path between node (1) and node (2), in a directed graph. And if there is 
 it will print the path between those two nodes, and again that path will be the shorted path possible between these two nodes.
 <br>
-image
+<br>
+<p align="center">
+  <img src="https://github.com/TehleelMir/images/blob/main/graph.jpeg" width="350"/>
+</p>
 <br>
 <br>
 
