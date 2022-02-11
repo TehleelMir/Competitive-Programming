@@ -13,7 +13,7 @@ In depth-first search, there are also two main operations happing <br>
 - checking all the edges of that node <br><br>
 so thus O(V+E) is the time complexity of this graph.<br><br>
 
-Ps: in breadth's first search I have already written a huge explanation about the time complexity of that graph and the same can be applied here as well. 
+Ps: in breadth first search I have already written a huge explanation about the time complexity of that graph and the same can be applied here as well. 
 <br><br>
 
 In the below coding example i have used an undirected graph, while as in breadth first search algorithm i have used the directed graph as an example. But the
