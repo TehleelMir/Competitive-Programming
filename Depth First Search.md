@@ -1,6 +1,6 @@
 **Depth First Search🎃**<br>
-////
-<br>br>
+Depth first search is a graph algorithm used in topological sorting, scheduling problems, cycle detection in graphs, and solving puzzles with only one solution, such as a maze or a sudoku puzzle.
+<br><br>
 
 **Time complixity**<br>
 The time complexity for the depth-first search is O(V+E). Where v is the number of vertices and e number of edges.<br><br>
