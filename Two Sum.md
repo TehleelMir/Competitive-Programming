@@ -22,7 +22,7 @@ class Solution {
 ```
 <br><br>
 
-**O(n * n/2) which I think we can also write as O(n log-n)**<br>
+**O(n * n/2)**<br>
 The below code also uses the brute force method, but the inner loop runs only half the size of the array instead of going through the whole array each time. <br>
 Thus the time complexity of the outer loop is O(n) because it goes through the whole array, and the time complexity of the inner loop is O(n/2), combining the both we get 
 O(n * n/2) as the time complexity for the below code. <br><br>
