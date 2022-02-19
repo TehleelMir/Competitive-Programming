@@ -1,6 +1,6 @@
 **Palindrome Number🎙**<br>
 
-Three different solution with three different time complixites <br><br>
+Three different solution with three different time complexities <br><br>
 
 **O(n)**<br>
 Where n is the number of digits. The reversing of a string will take n steps.
