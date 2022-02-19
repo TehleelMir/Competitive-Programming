@@ -35,7 +35,7 @@ class Solution {
 
 **O(Log base 10 (n))**<br>
 Where n is the number itself, in the below program we are trying to get the half number of the actual number, and on each loop, we are dividing out input by 10. 
-In other words how many times do we have to divide n by 10 in order to get its half number? 
+In other words how many times do we have to divide n by 10 in order to get its half number
 <br>
 **Code**<br>
 ```
