@@ -70,7 +70,7 @@ class customComparator implements Comparator<int[]> {
 }
 ```
 <br><br>
-**Version 2*<br>
+**Version 2**<br>
 ```
 class Solution {
     public int removeCoveredIntervals(int[][] i)  {
