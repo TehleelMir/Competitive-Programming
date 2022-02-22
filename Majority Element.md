@@ -30,8 +30,7 @@ class Solution {
     }
 }
 ```
-<br>
-<br>
+<br><br>
 **O(n)**<br>
 Going throught the whole array only once, so O(n)
 <br>
@@ -54,8 +53,7 @@ class Solution {
     }
 }
 ```
-<br>
-<br>
+<br><br>
 **O(n log n)**<br>
 Sorting takes O(n log n) time to sort the list, so O(n log n)
 <br>
@@ -69,8 +67,7 @@ class Solution {
     }
 }
 ```
-<br>
-<br>
+<br><br>
 
 **O(n) && O(1) for space complexity**<br>
 Going through the array only once, and maintaining the space content by not using any extra array or hashmap using the Boyer-Moore Voting Algorithm ( yeah i also can't pronounce
