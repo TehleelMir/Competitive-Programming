@@ -70,7 +70,7 @@ class Solution {
 <br><br>
 
 **O(n) && O(1) for space complexity**<br>
-Going through the array only once, and maintaining the space content by not using any extra array or hashmap using the Boyer-Moore Voting Algorithm ( yeah i also can't pronounce
+Going through the array only once, and maintaining the space constant by not using any extra array or hashmap using the Boyer-Moore Voting Algorithm ( yeah i also can't pronounce
 it)
 <br><br>
 **Code**<br>
