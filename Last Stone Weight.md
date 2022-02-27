@@ -7,8 +7,8 @@ Two different solutions with the same time complexity but one solution is using 
 Ps: PriorityQueue is the function we are taking here. <br><br>
 
 **Time Complexity**<br>
-//learn first about this part
-
+The time complexity of the above solutions is O(n log n), Once we remove a top element from the list we adjust it by applying max heap operation which takes Log n time. 
+So for each n we are doing Log n operation i.e. O(n log n). 
 <br><br>
 **solution 1**<br>
 **Code**<br>
