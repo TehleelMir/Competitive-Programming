@@ -3,7 +3,7 @@
 Leet code link: https://leetcode.com/problems/valid-parentheses/ <br><br>
 
 **Time Complexity**<br>
-**O(n)** we are going through the whole array only once, and the insertion and deletion in a stack are constant time. <br><br>
+**O(n)** we are going through the whole string only once, and the insertion and deletion in a stack are constant time. <br><br>
 
 **Code**<br>
 ```
