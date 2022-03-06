@@ -3,7 +3,7 @@
 Leet code link: https://leetcode.com/problems/symmetric-tree/ <br><br>
 
 **Time Complexity of below solution**<br>
-**O(n)**, because we are going through the all nodes of a tree only once. 
+**O(n/2)**, Because on each level of recursion we check/visiting two nodes at a time. 
 
 <br><br>
 **Code**<br>
